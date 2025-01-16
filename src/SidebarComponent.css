@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   justify-content: flex-start;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease; /* Sidebar width transition */
   overflow: hidden; /* Prevent overflow on the sidebar */
 }
 
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease; /* Smooth transition for icons container */
 }
 
 .sidebar-icon {
@@ -26,12 +27,26 @@
   border: none;
   margin: 10px 0;
   cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for sidebar icons */
 }
 
 .sidebar-icon img {
   width: 24px;
   height: 24px;
-  transition: width 0.3s ease, height 0.3s ease;
+  transition: all 0.3s ease; /* Smooth transition for icon images */
+}
+
+/* Hover effect for sidebar icons */
+.sidebar-icon:hover {
+  transform: scale(1.1); /* Enlarge icon on hover */
+}
+
+.sidebar-icon:active {
+  transform: scale(0.95); /* Slightly shrink icon on click */
+}
+
+.sidebar-icon:hover img {
+  filter: brightness(1.2); /* Make the icon image brighter on hover */
 }
 
 /* Ensure 3 icons on top and 2 on the bottom */
@@ -54,7 +69,7 @@
   border-radius: 5px;
   font-size: 16px;
   width: 100%;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   cursor: pointer;
   text-align: center;
 }
@@ -62,7 +77,6 @@
 .customize-button:hover {
   background-color: #0056b3;
 }
-
 
 .customization-panel {
   position: fixed;
