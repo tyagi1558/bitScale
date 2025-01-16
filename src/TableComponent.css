@@ -1,0 +1,159 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin: 0 10px;
+  padding-bottom: 10px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.header-icon {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.black-bg {
+  background-color: #000;
+  padding: 5px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.error {
+  color: red;
+}
+
+.loading {
+  color: orange;
+}
+
+.add-row {
+  text-align: center;
+  cursor: pointer;
+  color: #007bff;
+}
+
+/* Responsive Adjustments */
+
+/* For Large Screens (Desktops and Laptops) */
+@media (max-width: 1200px) {
+  .styled-table th,
+  .styled-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .table-wrapper {
+    margin: 18px;
+  }
+}
+
+/* For Tablets and Smaller Laptops */
+@media (max-width: 1024px) {
+  .styled-table th,
+  .styled-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .table-wrapper {
+    margin: 15px;
+  }
+}
+
+/* For Tablets and Large Phones */
+@media (max-width: 768px) {
+  .styled-table {
+    font-size: 13px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .table-wrapper {
+    margin: 10px;
+  }
+
+  .add-row {
+    font-size: 13px;
+  }
+
+  .icon {
+    margin-right: 4px;
+  }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+  .styled-table {
+    font-size: 12px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 6px;
+    font-size: 11px;
+  }
+
+  .table-wrapper {
+    margin: 5px;
+  }
+
+  .add-row {
+    font-size: 12px;
+  }
+
+  .icon {
+    margin-right: 3px;
+  }
+}
+
+/* For Extra Small Devices */
+@media (max-width: 360px) {
+  .styled-table {
+    font-size: 11px;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+  .table-wrapper {
+    margin: 2px;
+  }
+
+  .add-row {
+    font-size: 11px;
+  }
+
+  .icon {
+    margin-right: 2px;
+  }
+}

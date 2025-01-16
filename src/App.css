@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 60px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    margin-left: 40px;
+  }
+}

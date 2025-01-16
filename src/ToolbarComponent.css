@@ -1,0 +1,232 @@
+/* Default styles (for larger screens) */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 8px; 
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 0;
+  flex-grow: 1;
+}
+
+.toolbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon1 {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-img {
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+}
+
+.enrich-button {
+  display: flex;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.enrich-button:hover {
+  background: #555;
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.action-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.delete-icon img {
+  width: 20px;
+  height: 20px;
+  filter: invert(36%) sepia(97%) saturate(750%) hue-rotate(337deg) brightness(95%) contrast(99%);
+}
+
+/* Mobile (sm) */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .toolbar-icons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .enrich-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .toolbar-actions {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .action-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .delete-icon img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Tablet (md) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .toolbar {
+    padding: 10px 15px;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+
+  .toolbar-icons {
+    gap: 20px;
+  }
+
+  .enrich-button {
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+
+  .action-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .delete-icon img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Laptop (lg) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .toolbar {
+    padding: 10px 20px;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+
+  .toolbar-icons {
+    gap: 25px;
+  }
+
+  .enrich-button {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+
+  .action-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .delete-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Desktop (lg) */
+@media (min-width: 1201px) {
+  .toolbar {
+    padding: 10px 20px;
+  }
+
+  .search-bar {
+    width: 60%;
+  }
+
+  .toolbar-icons {
+    gap: 30px;
+  }
+
+  .enrich-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .action-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .delete-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
