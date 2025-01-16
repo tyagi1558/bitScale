@@ -4,6 +4,7 @@ import BmwLogo from './assets/BmwLogo.png';
 import BitscaleLogo from './assets/BitscaleLogo.png';
 import GoogleLogo from './assets/GoogleLogo.png';
 import AppleLogo from './assets/AppleLogo.png';
+import LinkedinIcon from './assets/LinkedinIcon.png';
 import FigmaLogo from './assets/FigmaLogo.png';
 import EnrichLogo from './assets/EnrichLogo.png'; 
 import ActionLogo from './assets/ActionLogo.png';
@@ -39,48 +40,32 @@ const TableComponent = () => {
           </tr>
           <tr>
             <td>2</td>
-            <td>
-    <img src={playIcon} alt="Play Icon" className="icon" />
-  </td>
-  <td>
-    Oct 12, 2024 at 14:08 PM
-  </td>
+            <td><img src={playIcon} alt="Play Icon" className="icon" /></td>
+            <td>Oct 12, 2024 at 14:08 PM</td>   
             <td ><img src={CellTrangel} alt="Play Icon" className="icon" /> cell data size exceeds limit</td>
             <td><img src={BmwLogo} alt="BMW Logo" className="icon" /> BMW Evaluation - Relevancy c...</td>
             <td></td>
           </tr>
           <tr>
             <td>3</td>
-            <td>
-    <img src={playIcon} alt="Play Icon" className="icon" />
-  </td>
-  <td>
-    Oct 12, 2024 at 14:08 PM
-  </td>
-            <td><span className="icon">🔗</span> <a href="https://www.linkedin.com/in/anmol-tyagi-0176801b2/">https://www.linkedIn.com/bitScale.ai/sample</a></td>
+            <td><img src={playIcon} alt="Play Icon" className="icon" /></td>
+            <td>Oct 12, 2024 at 14:08 PM</td>   
+            <td><img src={LinkedinIcon} alt="Play Icon" className="icon" />  <a href="https://www.linkedin.com/in/anmol-tyagi-0176801b2/">https://www.linkedIn.com/bitScale.ai/sample</a></td>
             <td><img src={GoogleLogo} alt="Google Logo" className="icon" /> Google Evaluation - Lievancy...</td>
             <td></td>
           </tr>
           <tr>
             <td>4</td>
-            <td>
-    <img src={playIcon} alt="Play Icon" className="icon" />
-  </td>
-  <td>
-    Oct 12, 2024 at 14:08 PM
-  </td>
+            <td><img src={playIcon} alt="Play Icon" className="icon" /></td>
+            <td>Oct 12, 2024 at 14:08 PM</td>   
             <td ><img src={LoadingIcon} alt="Play Icon" className="icon" /> Loading data, Please wait</td>
             <td><img src={AppleLogo} alt="Apple Logo" className="icon" /> Apple Evaluation - Olivancy che...</td>
             <td></td>
           </tr>
           <tr>
             <td>5</td>
-            <td>
-    <img src={playIcon} alt="Play Icon" className="icon" />
-  </td>
-  <td>
-    Oct 12, 2024 at 14:08 PM
-  </td>
+            <td><img src={playIcon} alt="Play Icon" className="icon" /></td>
+            <td>Oct 12, 2024 at 14:08 PM</td>   
             <td ><img src={LoadingIcon} alt="Play Icon" className="icon" /> Loading data, Please wait</td>
             <td><img src={FigmaLogo} alt="Figma Logo" className="icon" /> Figma Evaluation - Evancy che...</td>
             <td></td>

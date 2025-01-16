@@ -10,22 +10,21 @@
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-between;
+  justify-content: flex-start;
   transition: width 0.3s ease;
   overflow: hidden; /* Prevent overflow on the sidebar */
 }
 
-.top-icons {
+.top-icons, .bottom-icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
 }
 
 .sidebar-icon {
   background: none;
   border: none;
-  margin: 20px 0;
+  margin: 10px 0;
   cursor: pointer;
 }
 
@@ -35,62 +34,103 @@
   transition: width 0.3s ease, height 0.3s ease;
 }
 
+/* Ensure 3 icons on top and 2 on the bottom */
+.top-icons {
+  margin-top: 20px;
+  flex: 1;
+}
+
 .bottom-icons {
+  margin-bottom: 20px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.customize-button {
+  background-color: #6f7478;
+  color: rgb(22, 3, 3);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px; 
+  cursor: pointer;
+  text-align: center;
+}
+
+.customize-button:hover {
+  background-color: #0056b3;
+}
+
+
+.customization-panel {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.customization-panel h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.icon-selection {
   display: flex;
   flex-direction: column;
+}
+
+.icon-option {
+  display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 5px 0;
 }
 
-/* Sidebar Resizing */
-@media (max-width: 1024px) {
-  .sidebar {
-    width: 55px;
-  }
-
-  .sidebar-icon img {
-    width: 22px;
-    height: 22px;
-  }
+.icon-option img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
+/* Mobile Responsiveness: Allow scrolling for icons */
 @media (max-width: 768px) {
   .sidebar {
-    width: 50px;
+    width: 50px;  /* Make the sidebar narrower */
   }
 
-  .sidebar-icon img {
-    width: 20px;
-    height: 20px;
+  .top-icons, .bottom-icons {
+    overflow-y: auto; /* Enable vertical scrolling for icons */
+    max-height: 50%;  /* Limit the height of the icons container */
   }
-}
 
-@media (max-width: 600px) {
-  .sidebar {
-    width: 45px;
+  .sidebar-icon {
+    margin: 8px 0;
   }
 
   .sidebar-icon img {
     width: 18px;
     height: 18px;
   }
+
+  .customize-button {
+    bottom: 10px;  /* Adjust the button position in mobile view */
+    font-size: 12px;
+    padding: 10px 15px;
+  }
 }
 
 @media (max-width: 480px) {
   .sidebar {
-    width: 40px;
+    width: 40px;  /* Further narrow down the sidebar */
   }
 
-  .sidebar-icon img {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-@media (max-width: 430px) {
-  .sidebar {
-    width: 35px;
-    padding: 5px 0;
+  .top-icons, .bottom-icons {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 40%;  /* Limit the height of the icons container */
   }
 
   .sidebar-icon img {
@@ -98,7 +138,9 @@
     height: 14px;
   }
 
-  .sidebar-icon {
-    margin: 15px 0;
+  .customize-button {
+    bottom: 10px;  /* Keep the button visible */
+    font-size: 10px;
+    padding: 8px 12px;
   }
 }

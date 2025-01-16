@@ -7,6 +7,13 @@
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header.dark {
+  background-color: #333;
+  color: #fff;
+  border-bottom: 1px solid #444;
 }
 
 /* Left Section Styling */
@@ -25,10 +32,18 @@
   color: #333;
 }
 
+.header.dark .back-button {
+  color: #fff;
+}
+
 .file-name {
   font-size: 16px;
   font-weight: normal;
   color: #333;
+}
+
+.header.dark .file-name {
+  color: #fff;
 }
 
 /* Right Section Styling */
@@ -85,6 +100,10 @@
   font-size: 14px;
 }
 
+.header.dark .auto-save-text {
+  color: #4caf50;
+}
+
 .user-icon {
   background: #f0f0f0;
   border: none;
@@ -93,6 +112,25 @@
   cursor: pointer;
   font-size: 18px;
   color: #333;
+}
+
+.header.dark .user-icon {
+  background: #555;
+  color: #fff;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.header.dark .dark-mode-toggle {
+  color: #fff;
 }
 
 /* Responsive Design */

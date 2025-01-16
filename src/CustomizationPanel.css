@@ -1,0 +1,32 @@
+.customization-panel {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .customization-panel h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .icon-selection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icon-option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .icon-option img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  

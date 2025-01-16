@@ -3,6 +3,8 @@ import HeaderComponent from './HeaderComponent';
 import SidebarComponent from './SidebarComponent';
 import ToolbarComponent from './ToolbarComponent';
 import TableComponent from './TableComponent';
+import NotificationComponent from './NotificationComponent';
+
 import './App.css';
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
       <SidebarComponent />
       <div className="main-content">
         <HeaderComponent />
+        <NotificationComponent />
         <ToolbarComponent />
         <TableComponent />
       </div>
